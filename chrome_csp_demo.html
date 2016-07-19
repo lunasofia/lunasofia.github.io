@@ -2,6 +2,11 @@
 <head>
 <meta http-equiv="Content-Security-Policy" content="script-src 'self' nonce-1234;">
 <title>Chrome CSP Demo</title>
+<script type="text/javascript">
+window.onload = function(){
+   document.body.appendChild("ohhai");
+};
+</script>
 </head>
 <body>
 <h1>Hello World</h1>
