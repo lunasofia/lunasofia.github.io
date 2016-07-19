@@ -1,0 +1,15 @@
+<html>
+<head>
+<meta http-equiv="Content-Security-Policy" content="img-src 'self' 'nonce-1234';">
+<meta charset="UTF-8">
+<title>Firefox CSP Demo</title>
+<script type="text/javascript" nonce="<?= $nonce; ?>">
+window.onload = function(){
+var txt = document.createTextNode('Hello');
+document.body.appendChild(txt);
+};
+</script>
+</head>
+<body>
+</body>
+</html>
