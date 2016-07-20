@@ -1,9 +1,9 @@
 <html>
 <head>
-<meta http-equiv="Content-Security-Policy" content="img-src 'nonce-1234';">
+<meta http-equiv="Content-Security-Policy" content="img-src 'nonce-1234'; script-src 'nonce-1234'">
 <title>Chrome CSP Demo</title>
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Atlanta_Zoo_Panda.jpg" nonce="1234"></img>
-<script src="https://lunasofia.github.io/example.js" nonce="1234"></script>
+<script src="/example.js" nonce="1234"></script>
 </head>
 <body>
 <h1>There should be a panda here</h1>
